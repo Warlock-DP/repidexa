@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Rapidexa</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/globals.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        Rapidexa<span class="logo-dot">.</span>
+      </a>
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="network.html">Network</a></li>
+          <li><a href="tracking.html">Tracking</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary header-cta">Get Quote</a>
+        <button class="mobile-toggle" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay">
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">Rapidexa<span class="logo-dot">.</span></a>
+        <button aria-label="Close menu" class="mobile-close"><i data-lucide="x"></i></button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="industries.html" class="mobile-link">Industries</a>
+        <a href="network.html" class="mobile-link">Network</a>
+        <a href="tracking.html" class="mobile-link">Tracking</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get a Quote</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="aboutHero">
+      <div class="heroBgImage">
+        <img src="./img/about_hero.png" alt="" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;" />
+      </div>
+      <div class="heroOverlay"></div>
+      <div class="container">
+        <h1 class="reveal">About Rapidexa</h1>
+        <p class="reveal" style="transition-delay: 0.2s;">
+          Building the most reliable logistics network for regional businesses.
+        </p>
+      </div>
+    </section>
+
+    <section class="missionSection">
+      <div class="container">
+        <div class="missionContainer">
+          <div class="missionText reveal-left">
+            <h2>Our Mission</h2>
+            <p>Founded in Vadodara, Rapidexa was built on a simple premise: regional logistics should be as reliable and transparent as national carriers, but with the flexibility that SMEs require.</p>
+            <p>We empower manufacturers, traders, and fast-growing brands across Gujarat and Western India by providing a supply chain backbone they can truly depend on.</p>
+          </div>
+          <div class="missionImage reveal-right">
+            <img src="./img/about_mission.png" alt="Rapidexa fleet" loading="lazy" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="valuesSection">
+      <div class="container">
+        <h2 class="section-title reveal">Core Values</h2>
+        <div class="valuesGrid">
+          <div class="glass valueCard reveal">
+            <i data-lucide="shield-check" class="valueIcon" style="width: 48px; height: 48px;"></i>
+            <h4>Reliability</h4>
+            <p>We honor our transit times and keep our promises.</p>
+          </div>
+          <div class="glass valueCard reveal" style="transition-delay: 0.1s;">
+            <i data-lucide="eye" class="valueIcon" style="width: 48px; height: 48px;"></i>
+            <h4>Transparency</h4>
+            <p>No hidden fees, real-time visibility.</p>
+          </div>
+          <div class="glass valueCard reveal" style="transition-delay: 0.2s;">
+            <i data-lucide="users" class="valueIcon" style="width: 48px; height: 48px;"></i>
+            <h4>Customer-First</h4>
+            <p>Your success is our success.</p>
+          </div>
+          <div class="glass valueCard reveal" style="transition-delay: 0.3s;">
+            <i data-lucide="shield-alert" class="valueIcon" style="width: 48px; height: 48px;"></i>
+            <h4>Safety</h4>
+            <p>Rigorous standards for cargo integrity.</p>
+          </div>
+          <div class="glass valueCard reveal" style="transition-delay: 0.4s;">
+            <i data-lucide="lightbulb" class="valueIcon" style="width: 48px; height: 48px;"></i>
+            <h4>Innovation</h4>
+            <p>Tech-driven smarter route planning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timelineSection">
+      <div class="container">
+        <h2 class="section-title reveal">Our Journey</h2>
+        <div class="timeline">
+          <div class="timelineItem reveal-left">
+            <div class="timelineDot"></div>
+            <div class="glass timelineContent">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.85rem;">Phase 1</span>
+              <h4>Company Founded</h4>
+              <p>Rapidexa established its HQ in Vadodara with a vision to streamline regional freight.</p>
+            </div>
+          </div>
+          <div class="timelineItem reveal-left" style="transition-delay: 0.1s;">
+            <div class="timelineDot"></div>
+            <div class="glass timelineContent">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.85rem;">Phase 2</span>
+              <h4>First Core Route</h4>
+              <p>Launched the daily express linehaul between Vadodara and Mumbai.</p>
+            </div>
+          </div>
+          <div class="timelineItem reveal-left" style="transition-delay: 0.2s;">
+            <div class="timelineDot"></div>
+            <div class="glass timelineContent">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.85rem;">Phase 3</span>
+              <h4>Hub Expansion</h4>
+              <p>Opened major delivery hubs in Ahmedabad and Surat.</p>
+            </div>
+          </div>
+          <div class="timelineItem reveal-left" style="transition-delay: 0.3s;">
+            <div class="timelineDot"></div>
+            <div class="glass timelineContent">
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.85rem;">Today</span>
+              <h4>200+ Clients</h4>
+              <p>Trusted partner for manufacturers and e-commerce brands across Western India.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Rapidexa<span style="color: var(--color-accent)">.</span></a>
+          <p class="footer-desc">
+            Next-generation B2B logistics powering businesses across Gujarat & Western India. Speed meets reliability.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="link-2" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="globe" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="share-2" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund/Claims</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i data-lucide="phone" style="width: 16px; height: 16px;"></i> +91 98765 43210</li>
+            <li><i data-lucide="mail" style="width: 16px; height: 16px;"></i> info@rapidexa.com</li>
+            <li><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> Vadodara, Gujarat</li>
+          </ul>
+          <a href="contact.html" class="footer-cta">
+            Get a Quote <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Rapidexa Logistics. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

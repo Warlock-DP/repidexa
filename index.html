@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapidexa | B2B Logistics Across Gujarat & Western India</title>
+  <meta name="description" content="Reliable B2B Logistics, Regional Express Distribution, Full Truckload (FTL), and Warehousing Services.">
+  
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/globals.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/home.css">
+  
+  <!-- CDNs -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        Rapidexa<span class="logo-dot">.</span>
+      </a>
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="network.html">Network</a></li>
+          <li><a href="tracking.html">Tracking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary header-cta">Get Quote</a>
+        <button class="mobile-toggle" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay">
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">
+          Rapidexa<span class="logo-dot">.</span>
+        </a>
+        <button aria-label="Close menu" class="mobile-close">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="industries.html" class="mobile-link">Industries</a>
+        <a href="network.html" class="mobile-link">Network</a>
+        <a href="tracking.html" class="mobile-link">Tracking</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        Get a Quote
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <div class="mainContainer">
+      <div class="mesh-bg"></div>
+
+      <!-- ===== HERO SECTION ===== -->
+      <section class="hero" style="min-height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 2rem;">
+        
+        <style>
+          @keyframes slowZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.15); }
+          }
+        </style>
+        
+        <div style="position: absolute; inset: 0; z-index: 0; overflow: hidden;">
+          <div id="dynamicHeroBg" style="position: absolute; inset: 0; background: url('./img/tracking_hero.png') center/cover no-repeat; animation: slowZoom 30s linear infinite alternate; transition: background-image 0.5s ease;"></div>
+        </div>
+        
+        <script>
+          // The fallback array of guaranteed high-quality logistics images
+          const fallbackImages = [
+            'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80', // Warehouse interior
+            'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80', // Smart Warehouse boxes
+            'https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1920&q=80', // Highway logistics
+            'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1920&q=80', // Trucking fleet
+            'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1920&q=80'  // Cargo ships
+          ];
+          
+          function setFallbackImage() {
+            const randomImage = fallbackImages[Math.floor(Math.random() * fallbackImages.length)];
+            document.getElementById('dynamicHeroBg').style.backgroundImage = `url('${randomImage}')`;
+          }
+
+          // IMPORTANT: Unsplash permanently shut down their keyless public API (source.unsplash.com).
+          // To use the real Unsplash API, you MUST insert your free Developer Access Key here:
+          const unsplashAccessKey = 'YOUR_UNSPLASH_ACCESS_KEY'; 
+          
+          if (unsplashAccessKey !== 'YOUR_UNSPLASH_ACCESS_KEY') {
+            // Fetch a random logistics image from the official Unsplash API
+            fetch(`https://api.unsplash.com/photos/random?query=logistics,freight,warehouse&orientation=landscape&client_id=${unsplashAccessKey}`)
+              .then(response => {
+                if (!response.ok) throw new Error('API limit reached or invalid key');
+                return response.json();
+              })
+              .then(data => {
+                document.getElementById('dynamicHeroBg').style.backgroundImage = `url('${data.urls.full}')`;
+              })
+              .catch(error => {
+                console.warn('Unsplash API failed, using fallback images.', error);
+                setFallbackImage();
+              });
+          } else {
+            // Use fallback immediately if no key is provided so the website doesn't break
+            setFallbackImage();
+          }
+        </script>
+        
+        <div class="heroOverlay" style="background: linear-gradient(180deg, rgba(10,4,24,0.4) 0%, rgba(10,4,24,0.2) 40%, rgba(10,4,24,1) 100%); z-index: 1;"></div>
+        
+        <!-- Floating Elements -->
+        <div class="floatingElement1 reveal" style="z-index: 3;">
+          <div class="glassCard" style="background: rgba(10, 4, 24, 0.4); border-color: rgba(255,204,0,0.3);">
+            <div class="glassIcon"><i data-lucide="clock"></i></div>
+            <div class="glassText">
+              <h4 style="font-size: 1.3rem;">99.8%</h4>
+              <p>On-time Delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="floatingElement2 reveal" style="z-index: 3;">
+          <div class="glassCard" style="background: rgba(10, 4, 24, 0.4); border-color: rgba(0, 210, 255, 0.3);">
+            <div class="glassIcon" style="background: linear-gradient(135deg, #00d2ff, #3a7bd5)"><i data-lucide="map-pin" color="white"></i></div>
+            <div class="glassText">
+              <h4 style="font-size: 1.3rem;">Live Tracking</h4>
+              <p>Active 24/7</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroContent" style="z-index: 2; position: relative; width: 100%; max-width: 900px; margin-top: 0;">
+          <div class="glass" style="padding: 4rem 3rem; border-radius: 30px; background: rgba(10, 4, 24, 0.5); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 30px 60px rgba(0,0,0,0.5);">
+            <div class="reveal">
+              <div class="heroBadge" style="background: rgba(255, 204, 0, 0.1); border-color: rgba(255, 204, 0, 0.3);">
+                <span class="heroBadgeDot"></span>
+                <span class="heroBadgeText" style="color: var(--color-accent);">The Future of Logistics</span>
+              </div>
+            </div>
+            
+            <h1 class="heroTitle reveal" style="font-size: clamp(3.5rem, 6vw, 5.5rem); margin-bottom: 1.5rem; line-height: 1.1;">
+              Move Faster.<br />
+              <span class="heroTitleAccent" style="background: linear-gradient(135deg, #ffffff 0%, var(--color-accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Scale Boundless.</span>
+            </h1>
+            
+            <p class="heroSubtitle reveal" style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 3rem;">
+              Experience next-generation B2B freight with AI-powered routing, real-time visibility, and an unbreakable regional network.
+            </p>
+            
+            <div class="heroActions reveal">
+              <a href="contact.html" class="btnSuper" style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">
+                Request Pickup <i data-lucide="arrow-right"></i>
+              </a>
+              <a href="services.html" class="btnSuperOutline" style="font-size: 1.1rem; padding: 1.2rem 2.5rem; background: rgba(255,255,255,0.1);">
+                Explore Solutions
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TRACKING WIDGET ===== -->
+      <div class="trackingWrapper reveal">
+        <form class="trackingInner" onsubmit="event.preventDefault(); window.location.href='tracking.html';">
+          <div class="trackingInputWrapper">
+            <i data-lucide="search" class="trackingIcon"></i>
+            <input 
+              type="text" 
+              class="trackingInput" 
+              placeholder="Enter Waybill, Order, or Consignment Number..." 
+              required
+            />
+          </div>
+          <button type="submit" class="trackingBtn">
+            Track Shipment
+          </button>
+        </form>
+      </div>
+
+      <!-- ===== STATS SECTION ===== -->
+      <section class="statsSection">
+        <div class="container">
+          <div class="statsGrid">
+            <div class="statCard reveal">
+              <div class="statNumber">
+                <span data-end="12">0</span>
+                <span style="color: var(--color-accent)">M+</span>
+              </div>
+              <div class="statLabel">Parcels Delivered</div>
+            </div>
+            <div class="statCard reveal" style="transition-delay: 0.1s">
+              <div class="statNumber">
+                <span data-end="35">0</span>
+                <span style="color: var(--color-accent)">+</span>
+              </div>
+              <div class="statLabel">Cities Connected</div>
+            </div>
+            <div class="statCard reveal" style="transition-delay: 0.2s">
+              <div class="statNumber">
+                <span data-end="99">0</span>
+                <span style="color: var(--color-accent)">.8%</span>
+              </div>
+              <div class="statLabel">On-Time Rate</div>
+            </div>
+            <div class="statCard reveal" style="transition-delay: 0.3s">
+              <div class="statNumber">
+                <span data-end="24">0</span>
+                <span style="color: var(--color-accent)">/7</span>
+              </div>
+              <div class="statLabel">Live Support</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3D SERVICES GRID ===== -->
+      <section class="servicesSection">
+        <div class="container">
+          <div class="sectionHeader reveal">
+            <h2 class="sectionTitle">Infinite Capabilities.</h2>
+            <p class="sectionSubtitle">From hyper-local express runs to massive dedicated fleets, we architect supply chains that dominate.</p>
+          </div>
+
+          <div class="servicesGrid">
+            <!-- Service 1 -->
+            <div class="reveal">
+              <div class="serviceCard">
+                <div class="serviceImageWrapper">
+                  <img src="./img/service_express.png" alt="Regional Express" class="serviceImage" loading="lazy" />
+                </div>
+                <div class="serviceOverlay"></div>
+                <div class="serviceContent">
+                  <div class="serviceIcon"><i data-lucide="zap"></i></div>
+                  <h3 class="serviceTitle">Regional Express</h3>
+                  <p class="serviceDesc">Lightning-fast 24-36hr door-to-door freight across the golden corridor of Gujarat & Western India.</p>
+                  <a href="services.html" class="serviceLink">
+                    Discover More <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="reveal">
+              <div class="serviceCard">
+                <div class="serviceImageWrapper">
+                  <img src="./img/service_ftl.png" alt="Full Truckload" class="serviceImage" loading="lazy" />
+                </div>
+                <div class="serviceOverlay"></div>
+                <div class="serviceContent">
+                  <div class="serviceIcon"><i data-lucide="truck"></i></div>
+                  <h3 class="serviceTitle">Full Truckload</h3>
+                  <p class="serviceDesc">Dedicated vehicles for massive shipments, ensuring maximum security and zero transshipment delays.</p>
+                  <a href="services.html" class="serviceLink">
+                    Discover More <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="reveal">
+              <div class="serviceCard">
+                <div class="serviceImageWrapper">
+                  <img src="./img/service_warehousing.png" alt="Smart Warehousing" class="serviceImage" loading="lazy" />
+                </div>
+                <div class="serviceOverlay"></div>
+                <div class="serviceContent">
+                  <div class="serviceIcon"><i data-lucide="package"></i></div>
+                  <h3 class="serviceTitle">Smart Warehousing</h3>
+                  <p class="serviceDesc">Tech-enabled storage and inventory management hubs strategically located for rapid distribution.</p>
+                  <a href="services.html" class="serviceLink">
+                    Discover More <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="reveal">
+              <div class="serviceCard">
+                <div class="serviceImageWrapper">
+                  <img src="./img/service_specialized.png" alt="Specialized Cargo" class="serviceImage" loading="lazy" />
+                </div>
+                <div class="serviceOverlay"></div>
+                <div class="serviceContent">
+                  <div class="serviceIcon"><i data-lucide="shield-check"></i></div>
+                  <h3 class="serviceTitle">Specialized Cargo</h3>
+                  <p class="serviceDesc">Custom handling for cold-chain, hazardous, or oversized logistics requirements.</p>
+                  <a href="services.html" class="serviceLink">
+                    Discover More <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SHOWCASE 1 ===== -->
+      <section class="showcaseSection">
+        <div class="container">
+          <div class="showcaseGrid">
+            <div class="showcaseContent reveal-left">
+              <h2><span style="color: var(--color-accent)">Omniscient</span> Visibility.</h2>
+              <p>
+                Eliminate the anxiety of the unknown. Our unified logistics dashboard provides granular, second-by-second telemetry for your entire supply chain.
+              </p>
+              
+              <div class="featureList">
+                <div class="featureItem">
+                  <div class="featureItemIcon"><i data-lucide="cpu"></i></div>
+                  <div class="featureItemText">
+                    <h4>AI-Powered Predictions</h4>
+                    <p>Machine learning algorithms forecast ETA with 98% accuracy.</p>
+                  </div>
+                </div>
+                <div class="featureItem">
+                  <div class="featureItemIcon"><i data-lucide="navigation"></i></div>
+                  <div class="featureItemText">
+                    <h4>Live GPS Telemetry</h4>
+                    <p>Watch your cargo move on the map in true real-time.</p>
+                  </div>
+                </div>
+                <div class="featureItem">
+                  <div class="featureItemIcon"><i data-lucide="shield-check"></i></div>
+                  <div class="featureItemText">
+                    <h4>Digital Chain of Custody</h4>
+                    <p>Instant electronic PODs and exception alerts.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="tracking.html" class="btnSuperOutline">
+                Experience Platform
+              </a>
+            </div>
+
+            <div class="reveal-right">
+              <div class="showcaseImageContainer">
+                <img src="./img/home_showcase1.png" alt="Dashboard" class="showcaseImage" loading="lazy" />
+                
+                <div class="showcaseFloatingBadge">
+                  <div class="badgeIcon"><i data-lucide="zap"></i></div>
+                  <div class="badgeText">
+                    <h4>0.03s</h4>
+                    <p>Update Latency</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SHOWCASE 2 ===== -->
+      <section class="showcaseSection">
+        <div class="container">
+          <div class="showcaseGrid reverse">
+            <div class="showcaseContent reveal-right">
+              <h2><span style="color: var(--color-accent)">Unbreakable</span> Network.</h2>
+              <p>
+                We've built the most resilient hub-and-spoke architecture in Western India. When disruptions happen, our dynamic routing reroutes your cargo instantly.
+              </p>
+              
+              <div class="featureList">
+                <div class="featureItem">
+                  <div class="featureItemIcon"><i data-lucide="globe"></i></div>
+                  <div class="featureItemText">
+                    <h4>30+ Mega Hubs</h4>
+                    <p>Strategically positioned for maximum geographic coverage.</p>
+                  </div>
+                </div>
+                <div class="featureItem">
+                  <div class="featureItemIcon"><i data-lucide="bar-chart-3"></i></div>
+                  <div class="featureItemText">
+                    <h4>Volume Scalability</h4>
+                    <p>Seamlessly scale from 10 to 10,000 shipments daily.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="network.html" class="btnSuper">
+                View Network Map <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="reveal-left">
+              <div class="showcaseImageContainer">
+                <img src="./img/home_showcase2.png" alt="Logistics Network" class="showcaseImage" loading="lazy" />
+                
+                <div class="showcaseFloatingBadge">
+                  <div class="badgeIcon"><i data-lucide="globe"></i></div>
+                  <div class="badgeText">
+                    <h4>98%</h4>
+                    <p>Pincode Reach</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== INFINITE MARQUEE ===== -->
+      <div class="marqueeWrapper">
+        <div class="marqueeInner">
+          <div style="display: flex;">
+            <div class="marqueeItem"><span class="marqueeText">SPEED</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">RELIABILITY</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">TRACKING</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">LOGISTICS</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">WAREHOUSING</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">B2B</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">FREIGHT</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">SUPPLY CHAIN</span><div class="marqueeDot"></div></div>
+          </div>
+          <div style="display: flex;">
+            <div class="marqueeItem"><span class="marqueeText">SPEED</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">RELIABILITY</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">TRACKING</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">LOGISTICS</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">WAREHOUSING</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">B2B</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">FREIGHT</span><div class="marqueeDot"></div></div>
+            <div class="marqueeItem"><span class="marqueeText">SUPPLY CHAIN</span><div class="marqueeDot"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CTA SECTION ===== -->
+      <section class="ctaSection">
+        <div class="ctaBg">
+          <img src="./img/about_hero.png" alt="" loading="lazy" style="opacity: 0.5;" />
+        </div>
+        <div class="ctaOverlay"></div>
+        <div class="ctaContent reveal">
+          <h2 class="ctaTitle">Dominate Your Market.</h2>
+          <p style="color: rgba(255,255,255,0.7); font-size: 1.2rem; margin-bottom: 3rem;">
+            Join 200+ industry leaders who trust Rapidexa with their critical supply chains.
+          </p>
+          <a href="contact.html" class="btnSuper">
+            Get a Custom Quote <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Rapidexa<span style="color: var(--color-accent)">.</span></a>
+          <p class="footer-desc">
+            Next-generation B2B logistics powering businesses across Gujarat & Western India. Speed meets reliability.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="link-2" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="globe" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="share-2" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund/Claims</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i data-lucide="phone" style="width: 16px; height: 16px;"></i> +91 98765 43210</li>
+            <li><i data-lucide="mail" style="width: 16px; height: 16px;"></i> info@rapidexa.com</li>
+            <li><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> Vadodara, Gujarat</li>
+          </ul>
+          <a href="contact.html" class="footer-cta">
+            Get a Quote <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Rapidexa Logistics. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

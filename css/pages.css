@@ -1,0 +1,180 @@
+.aboutHero {
+  position: relative;
+  min-height: 50vh;
+  display: flex; align-items: center;
+  overflow: hidden;
+  padding: 10rem 0 5rem 0;
+  text-align: center;
+}
+.heroBgImage { position: absolute; inset: 0; z-index: 0; }
+.heroBgImage img { width: 100%; height: 100%; object-fit: cover; }
+.heroOverlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10,4,24,0.88) 0%, rgba(10,4,24,0.95) 100%);
+  z-index: 1;
+}
+.aboutHero .container { position: relative; z-index: 2; }
+
+.aboutHero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  background: linear-gradient(135deg, #ffffff, var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutHero p {
+  color: var(--color-text-muted);
+  font-size: 1.25rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.missionSection { padding: 6rem 0; }
+
+.missionContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.missionText h2 {
+  color: var(--color-text-bright);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.missionText p {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.missionImage {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+}
+
+.missionImage img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.missionImage:hover img { transform: scale(1.05); }
+
+.valuesSection {
+  padding: 6rem 0;
+  background: rgba(255,255,255,0.015);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.valueCard {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--radius-md);
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover { transform: translateY(-5px); }
+
+.valueIcon {
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+
+.valueCard h4 {
+  color: var(--color-text-bright);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.valueCard p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.timelineSection { padding: 6rem 0; }
+
+.timeline {
+  max-width: 800px;
+  margin: 3rem auto 0 auto;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; left: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-primary-light));
+}
+
+.timelineItem {
+  margin-bottom: 3rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 18px; height: 18px;
+  background: var(--color-accent);
+  border: 3px solid var(--color-background);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 12px var(--color-accent-glow);
+}
+
+.timelineContent {
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius-md);
+}
+
+.timelineContent h4 {
+  color: var(--color-text-bright);
+  margin-bottom: 0.5rem;
+}
+
+.timelineContent p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .missionContainer { grid-template-columns: 1fr; }
+}
+
+/* Animations for Network Page */
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(0, 255, 136, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+  }
+}
+
+.city-card {
+  background: rgba(255,255,255,0.02) !important;
+}
+.city-card:hover {
+  background: rgba(255,255,255,0.04) !important;
+  border-color: rgba(255,255,255,0.15) !important;
+}

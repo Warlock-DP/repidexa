@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking | Rapidexa</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/globals.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Rapidexa<span class="logo-dot">.</span></a>
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="network.html">Network</a></li>
+          <li><a href="tracking.html" class="active">Tracking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary header-cta">Get Quote</a>
+        <button class="mobile-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay">
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">Rapidexa<span class="logo-dot">.</span></a>
+        <button aria-label="Close menu" class="mobile-close"><i data-lucide="x"></i></button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="industries.html" class="mobile-link">Industries</a>
+        <a href="network.html" class="mobile-link">Network</a>
+        <a href="tracking.html" class="mobile-link">Tracking</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get a Quote</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="aboutHero" style="min-height: 60vh; position: relative; overflow: hidden; display: flex; align-items: center; padding-top: 5rem;">
+      <div class="heroBgImage" style="position: absolute; inset: 0; z-index: 0;">
+        <div style="position: absolute; inset: 0; background: url('./img/tracking_hero.png') center/cover no-repeat; opacity: 0.5;"></div>
+      </div>
+      <div class="heroOverlay" style="background: linear-gradient(180deg, rgba(10,4,24,0.3) 0%, rgba(10,4,24,1) 100%);"></div>
+      
+      <div class="container" style="position: relative; z-index: 2;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+          <div style="text-align: left;">
+            <div style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(255,255,255,0.05); border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;" class="reveal">
+              <span style="color: var(--color-accent); font-weight: 600; letter-spacing: 1px; font-size: 0.9rem;">OMNISCIENT VISIBILITY</span>
+            </div>
+            <h1 class="reveal" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 1.5rem; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Track Your Cargo.</h1>
+            <p class="reveal" style="transition-delay: 0.2s; font-size: 1.25rem; color: rgba(255,255,255,0.8); line-height: 1.6;">Enter your Waybill or Order Number to get second-by-second telemetry, live GPS routing, and instant ETA updates for your shipment.</p>
+          </div>
+
+          <div class="reveal" style="transition-delay: 0.4s;">
+            <div class="glass" style="padding: 3.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,204,0,0.2); box-shadow: 0 20px 40px rgba(0,0,0,0.5); background: rgba(10,4,24,0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
+              <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(255,204,0,0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem auto; border: 1px solid rgba(255,204,0,0.2);">
+                <i data-lucide="map" style="width: 40px; height: 40px; color: var(--color-accent);"></i>
+              </div>
+              <h2 style="margin-bottom: 2rem; font-size: 1.8rem;">Enter Waybill Number</h2>
+              <form onsubmit="event.preventDefault(); alert('Tracking ID ' + document.getElementById('trackingId').value + ' not found in demo environment.');">
+                <input type="text" id="trackingId" placeholder="e.g. RPDX-123456789" required style="width: 100%; padding: 1.2rem 1.5rem; border-radius: 10px; border: 2px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.5); color: white; font-size: 1.1rem; margin-bottom: 1.5rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='var(--color-accent)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.2rem; padding: 1.2rem;">Track Shipment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        @media (max-width: 992px) {
+          .container > div { grid-template-columns: 1fr !important; text-align: center !important; gap: 3rem !important; }
+          .container > div > div:first-child { text-align: center !important; }
+        }
+      </style>
+    </section>
+
+    <section class="section" style="padding-top: 4rem; padding-bottom: 6rem;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          <div class="glass reveal" style="padding: 2.5rem; border-radius: var(--radius-lg); text-align: center;">
+            <i data-lucide="navigation" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem; margin-inline: auto;"></i>
+            <h3>Live GPS Telemetry</h3>
+            <p style="color: var(--color-text-muted); margin-top: 1rem;">Watch your cargo move on the map in true real-time with sub-second update latency.</p>
+          </div>
+          <div class="glass reveal" style="padding: 2.5rem; border-radius: var(--radius-lg); transition-delay: 0.1s; text-align: center;">
+            <i data-lucide="message-square" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem; margin-inline: auto;"></i>
+            <h3>SMS & WhatsApp Alerts</h3>
+            <p style="color: var(--color-text-muted); margin-top: 1rem;">Get instant proactive notifications directly to your phone at every milestone of the journey.</p>
+          </div>
+          <div class="glass reveal" style="padding: 2.5rem; border-radius: var(--radius-lg); transition-delay: 0.2s; text-align: center;">
+            <i data-lucide="shield-check" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem; margin-inline: auto;"></i>
+            <h3>Digital PODs</h3>
+            <p style="color: var(--color-text-muted); margin-top: 1rem;">Instantly download electronic Proof of Delivery documents the moment your shipment is signed for.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Rapidexa<span style="color: var(--color-accent)">.</span></a>
+          <p class="footer-desc">Next-generation B2B logistics powering businesses across Gujarat & Western India. Speed meets reliability.</p>
+          <div class="social-links">
+            <a href="#"><i data-lucide="message-circle" style="width: 18px; height: 18px;"></i></a>
+            <a href="#"><i data-lucide="link-2" style="width: 18px; height: 18px;"></i></a>
+            <a href="#"><i data-lucide="globe" style="width: 18px; height: 18px;"></i></a>
+            <a href="#"><i data-lucide="share-2" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund/Claims</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i data-lucide="phone" style="width: 16px; height: 16px;"></i> +91 98765 43210</li>
+            <li><i data-lucide="mail" style="width: 16px; height: 16px;"></i> info@rapidexa.com</li>
+            <li><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> Vadodara, Gujarat</li>
+          </ul>
+          <a href="contact.html" class="footer-cta">Get a Quote <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p>&copy; 2026 Rapidexa Logistics. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

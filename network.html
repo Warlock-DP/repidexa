@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Network | Rapidexa</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/globals.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Rapidexa<span class="logo-dot">.</span></a>
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="network.html" class="active">Network</a></li>
+          <li><a href="tracking.html">Tracking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary header-cta">Get Quote</a>
+        <button class="mobile-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay">
+    <div class="mobile-menu">
+      <div class="mobile-menu-header">
+        <a href="index.html" class="logo">Rapidexa<span class="logo-dot">.</span></a>
+        <button aria-label="Close menu" class="mobile-close"><i data-lucide="x"></i></button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="industries.html" class="mobile-link">Industries</a>
+        <a href="network.html" class="mobile-link">Network</a>
+        <a href="tracking.html" class="mobile-link">Tracking</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get a Quote</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+  <main>
+    <section style="min-height: 70vh; position: relative; overflow: hidden; display: flex; align-items: center; padding: 10rem 0 5rem 0;">
+      <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100vw; height: 100%; background: radial-gradient(ellipse at top, rgba(255,204,0,0.1) 0%, transparent 60%); z-index: 0;"></div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,4,24,0.2) 0%, rgba(10,4,24,1) 100%); z-index: 1;"></div>
+      
+      <div class="container" style="position: relative; z-index: 2;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+          
+          <div style="text-align: left;">
+            <div style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(255,255,255,0.05); border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;" class="reveal">
+              <span style="color: var(--color-accent); font-weight: 600; letter-spacing: 1px; font-size: 0.9rem;">OUR REACH</span>
+            </div>
+            <h1 class="reveal" style="font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: 1.5rem; text-shadow: 0 4px 20px rgba(0,0,0,0.5); line-height: 1.1; background: linear-gradient(135deg, #ffffff, var(--color-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">The Rapidexa Network</h1>
+            <p class="reveal" style="transition-delay: 0.2s; font-size: 1.25rem; color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 2rem;">Connecting 35+ cities across Western India. Our hub-and-spoke architecture ensures unmatched speed, route optimization, and unbreakable reliability.</p>
+            <div class="reveal" style="transition-delay: 0.3s; display: flex; gap: 2rem;">
+              <div>
+                <h2 style="color: var(--color-accent); font-size: 2.5rem; margin-bottom: 0.2rem;">35+</h2>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">Cities Covered</p>
+              </div>
+              <div>
+                <h2 style="color: var(--color-accent); font-size: 2.5rem; margin-bottom: 0.2rem;">5</h2>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">Major Hubs</p>
+              </div>
+              <div>
+                <h2 style="color: var(--color-accent); font-size: 2.5rem; margin-bottom: 0.2rem;">99%</h2>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">On-time Rate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal" style="transition-delay: 0.4s; position: relative;">
+            <div style="position: absolute; inset: -20px; background: radial-gradient(circle, rgba(255,204,0,0.2) 0%, transparent 70%); z-index: 0; filter: blur(30px);"></div>
+            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1000&q=80" alt="Logistics Network Hub" style="width: 100%; border-radius: 20px; position: relative; z-index: 1; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
+          </div>
+
+        </div>
+      </div>
+      
+      <style>
+        @media (max-width: 992px) {
+          .container > div { grid-template-columns: 1fr !important; text-align: center !important; gap: 3rem !important; }
+          .container > div > div:first-child { text-align: center !important; }
+          .container > div > div:first-child > div:last-child { justify-content: center !important; }
+        }
+      </style>
+    </section>
+
+    <section class="section" style="position: relative; overflow: hidden; padding-top: 2rem;">
+      <!-- Decorative background elements -->
+      <div style="position: absolute; top: 10%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, var(--color-accent-glow) 0%, transparent 70%); opacity: 0.1; filter: blur(60px); z-index: 0;"></div>
+      <div style="position: absolute; bottom: -20%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(100,50,255,0.2) 0%, transparent 70%); filter: blur(80px); z-index: 0;"></div>
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div style="text-align: center; margin-bottom: 5rem;">
+          <h2 class="reveal" style="font-size: 2.5rem;">Unbreakable Hub & Spoke Architecture</h2>
+          <p class="reveal" style="max-width: 700px; margin: 1.5rem auto 0; color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.8;">
+            Our strategically placed distribution centers ensure your cargo is never more than a few hours away from its destination. 
+            We map routes dynamically to avoid bottlenecks.
+          </p>
+        </div>
+        
+        <div class="network-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1100px; margin: 0 auto;">
+          <!-- City 1 -->
+          <div class="glass reveal city-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="padding: 2.5rem; border-radius: 24px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+            <div class="pulse-ring" style="position: absolute; top: 2.5rem; right: 2.5rem; width: 12px; height: 12px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); animation: pulse-green 2s infinite;"></div>
+            <i data-lucide="building-2" style="color: var(--color-accent); width: 48px; height: 48px; margin-bottom: 1.5rem;"></i>
+            <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Vadodara <span style="font-size: 0.9rem; color: var(--color-accent); vertical-align: middle; margin-left: 0.5rem; padding: 0.2rem 0.6rem; background: rgba(255,255,255,0.1); border-radius: 12px;">HQ</span></h3>
+            <p style="color: var(--color-text-muted);">Central command and primary sortation hub connecting all major routes.</p>
+          </div>
+
+          <!-- City 2 -->
+          <div class="glass reveal city-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="padding: 2.5rem; border-radius: 24px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.1s;">
+            <div class="pulse-ring" style="position: absolute; top: 2.5rem; right: 2.5rem; width: 12px; height: 12px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); animation: pulse-green 2s infinite 0.5s;"></div>
+            <i data-lucide="map-pin" style="color: var(--color-text-bright); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Ahmedabad</h3>
+            <p style="color: var(--color-text-muted);">North Gujarat distribution point handling high-volume commercial freight.</p>
+          </div>
+
+          <!-- City 3 -->
+          <div class="glass reveal city-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="padding: 2.5rem; border-radius: 24px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.2s;">
+            <div class="pulse-ring" style="position: absolute; top: 2.5rem; right: 2.5rem; width: 12px; height: 12px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); animation: pulse-green 2s infinite 1s;"></div>
+            <i data-lucide="map-pin" style="color: var(--color-text-bright); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Surat</h3>
+            <p style="color: var(--color-text-muted);">Textile and diamond sector specialist hub with accelerated processing.</p>
+          </div>
+
+          <!-- City 4 -->
+          <div class="glass reveal city-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="padding: 2.5rem; border-radius: 24px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.3s;">
+            <div class="pulse-ring" style="position: absolute; top: 2.5rem; right: 2.5rem; width: 12px; height: 12px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); animation: pulse-green 2s infinite 1.5s;"></div>
+            <i data-lucide="map-pin" style="color: var(--color-text-bright); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Mumbai</h3>
+            <p style="color: var(--color-text-muted);">Gateway to Maharashtra connecting Gujarat to the financial capital.</p>
+          </div>
+          
+          <!-- City 5 -->
+          <div class="glass reveal city-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="padding: 2.5rem; border-radius: 24px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.4s;">
+            <div class="pulse-ring" style="position: absolute; top: 2.5rem; right: 2.5rem; width: 12px; height: 12px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); animation: pulse-green 2s infinite 0.2s;"></div>
+            <i data-lucide="map-pin" style="color: var(--color-text-bright); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Rajkot</h3>
+            <p style="color: var(--color-text-muted);">Saurashtra region fulfillment center for manufacturing sectors.</p>
+          </div>
+          
+          <!-- City 6 -->
+          <div class="glass reveal city-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="padding: 2.5rem; border-radius: 24px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.5s;">
+            <div class="pulse-ring" style="position: absolute; top: 2.5rem; right: 2.5rem; width: 12px; height: 12px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); animation: pulse-green 2s infinite 0.8s;"></div>
+            <i data-lucide="map-pin" style="color: var(--color-text-bright); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Pune</h3>
+            <p style="color: var(--color-text-muted);">Extended Maharashtra reach for automotive and IT corridors.</p>
+          </div>
+
+        </div>
+        
+        <div class="reveal" style="text-align: center; margin-top: 5rem;">
+          <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">Need shipping outside these zones?</p>
+          <a href="contact.html" class="btn btn-primary" style="display: inline-flex;">Talk to our logistics experts</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Rapidexa<span style="color: var(--color-accent)">.</span></a>
+          <p class="footer-desc">Next-generation B2B logistics powering businesses across Gujarat & Western India. Speed meets reliability.</p>
+          <div class="social-links">
+            <a href="#"><i data-lucide="message-circle" style="width: 18px; height: 18px;"></i></a>
+            <a href="#"><i data-lucide="link-2" style="width: 18px; height: 18px;"></i></a>
+            <a href="#"><i data-lucide="globe" style="width: 18px; height: 18px;"></i></a>
+            <a href="#"><i data-lucide="share-2" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tracking.html">Tracking</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund/Claims</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i data-lucide="phone" style="width: 16px; height: 16px;"></i> +91 98765 43210</li>
+            <li><i data-lucide="mail" style="width: 16px; height: 16px;"></i> info@rapidexa.com</li>
+            <li><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> Vadodara, Gujarat</li>
+          </ul>
+          <a href="contact.html" class="footer-cta">Get a Quote <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p>&copy; 2026 Rapidexa Logistics. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

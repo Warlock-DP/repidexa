@@ -783,6 +783,16 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    height: auto;
+    padding: 6rem 0;
+  }
+  
+  .statsSection, .servicesSection { padding: 4rem 0; }
+  .showcaseSection { padding: 5rem 0; }
+  .ctaSection { padding: 6rem 0; }
+
   .heroTitle {
     font-size: 3rem;
   }

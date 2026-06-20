@@ -152,7 +152,10 @@
 }
 
 @media (max-width: 768px) {
-  .missionContainer { grid-template-columns: 1fr; }
+  .aboutHero { padding: 8rem 0 3rem 0; min-height: 40vh; }
+  .missionSection, .valuesSection, .timelineSection { padding: 4rem 0; }
+  .missionContainer { grid-template-columns: 1fr; gap: 3rem; }
+  .timeline { margin: 2rem auto 0 auto; }
 }
 
 /* Animations for Network Page */

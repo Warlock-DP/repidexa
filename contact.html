@@ -80,13 +80,33 @@
           <div class="glass" style="padding: 2rem; border-radius: var(--radius-md); width: 300px;">
             <i data-lucide="phone" style="color: var(--color-accent); width: 32px; height: 32px; margin-bottom: 1rem;"></i>
             <h3>Call Us</h3>
-            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">+91 98765 43210</p>
+            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">+91 97142 55995</p>
           </div>
           <div class="glass" style="padding: 2rem; border-radius: var(--radius-md); width: 300px;">
             <i data-lucide="mail" style="color: var(--color-accent); width: 32px; height: 32px; margin-bottom: 1rem;"></i>
             <h3>Email Us</h3>
-            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">info@rapidexa.com</p>
+            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">info@rapidexalogistics.com</p>
           </div>
+        </div>
+
+        <div class="reveal" style="max-width: 600px; margin: 4rem auto 0 auto; text-align: left; background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.05);">
+          <h3 style="margin-bottom: 1.5rem; text-align: center; color: var(--color-accent);">Request a Quote</h3>
+          <p style="text-align: center; color: var(--color-text-muted); margin-bottom: 2rem;">Fill out the form below to connect instantly with our team via WhatsApp.</p>
+          <form id="quoteForm" onsubmit="submitToWhatsApp(event)">
+            <div style="margin-bottom: 1rem;">
+              <label style="display: block; margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.95rem;">Name *</label>
+              <input type="text" id="waName" required style="width: 100%; padding: 0.8rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white; font-family: inherit;">
+            </div>
+            <div style="margin-bottom: 1rem;">
+              <label style="display: block; margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.95rem;">Company Name</label>
+              <input type="text" id="waCompany" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white; font-family: inherit;">
+            </div>
+            <div style="margin-bottom: 2rem;">
+              <label style="display: block; margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.95rem;">Requirements / Inquiry *</label>
+              <textarea id="waMessage" required rows="4" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white; font-family: inherit; resize: vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; border: none; font-size: 1.1rem;"><i data-lucide="message-circle" style="width: 20px; height: 20px;"></i> Send via WhatsApp</button>
+          </form>
         </div>
       </div>
     </section>
@@ -134,9 +154,9 @@
         <div class="footer-col">
           <h4>Contact Us</h4>
           <ul class="footer-contact">
-            <li><i data-lucide="phone" style="width: 16px; height: 16px;"></i> +91 98765 43210</li>
-            <li><i data-lucide="mail" style="width: 16px; height: 16px;"></i> info@rapidexa.com</li>
-            <li><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> Vadodara, Gujarat</li>
+            <li><i data-lucide="phone" style="width: 16px; height: 16px;"></i> +91 97142 55995</li>
+            <li><i data-lucide="mail" style="width: 16px; height: 16px;"></i> info@rapidexalogistics.com</li>
+            <li><i data-lucide="map-pin" style="width: 16px; height: 16px;"></i> 2, Sagar Roadways, Chhabila Nagar, Harni-halol Road, Vadodara, Gujarat - 390022, India</li>
           </ul>
           <a href="contact.html" class="footer-cta">
             Get a Quote <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>

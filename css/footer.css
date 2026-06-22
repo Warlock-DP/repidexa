@@ -28,7 +28,8 @@
 .footer-brand .logo {
   font-size: 1.8rem;
   font-weight: 900;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -97,8 +98,9 @@
   font-size: 0.95rem;
 }
 
-.footer-contact li i {
+.footer-contact li i, .footer-contact li svg {
   margin-top: 4px;
+  flex-shrink: 0;
 }
 
 .footer-cta {
@@ -130,5 +132,6 @@
 }
 
 @media (max-width: 600px) {
+  .footer { padding: 3rem 0 0 0; }
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
 }

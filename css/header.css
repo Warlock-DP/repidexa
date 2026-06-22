@@ -27,6 +27,14 @@
   font-weight: 900;
   color: #ffffff;
   letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: auto;
+  width: 250px;
+  max-width: 100%;
 }
 
 .logo-dot {
@@ -181,4 +189,10 @@
   .desktop-nav { display: none; }
   .header-cta { display: none !important; }
   .mobile-toggle { display: block; }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 180px;
+  }
 }

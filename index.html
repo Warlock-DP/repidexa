@@ -27,7 +27,7 @@
   <header class="header">
     <div class="container header-container">
       <a href="index.html" class="logo">
-        Rapidexa<span class="logo-dot">.</span>
+        <img src="./img/logo.svg" alt="Rapidexa Logo" class="logo-img">
       </a>
       <nav class="desktop-nav">
         <ul class="nav-links">
@@ -53,7 +53,7 @@
     <div class="mobile-menu">
       <div class="mobile-menu-header">
         <a href="index.html" class="logo">
-          Rapidexa<span class="logo-dot">.</span>
+          <img src="./img/logo.svg" alt="Rapidexa Logo" class="logo-img">
         </a>
         <button aria-label="Close menu" class="mobile-close">
           <i data-lucide="x"></i>
@@ -109,11 +109,10 @@
         <script>
           // The fallback array of guaranteed high-quality logistics images
           const fallbackImages = [
-            './img/service_ftl.png',
-            './img/service_express.png',
+            './img/home_hero.png',
             './img/mountain_truck.png',
             './img/tracking_hero.png',
-            './img/home_showcase1.png'
+            './img/about_mission.png'
           ];
           
           function setFallbackImage() {
@@ -216,6 +215,36 @@
         </form>
       </div>
 
+      <!-- ===== ABOUT SECTION ===== -->
+      <section class="section" style="padding-top: 6rem; padding-bottom: 2rem;">
+        <div class="container">
+          <div class="showcaseGrid">
+            <div class="showcaseContent reveal-left">
+              <div style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(255,255,255,0.05); border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 1.5rem;">
+                <span style="color: var(--color-accent); font-weight: 600; letter-spacing: 1px; font-size: 0.9rem;">WHO WE ARE</span>
+              </div>
+              <h2 style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 900; margin-bottom: 1.5rem; color: #fff;">The Backbone of Regional Logistics</h2>
+              <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.7); line-height: 1.8; margin-bottom: 2.5rem;">
+                Founded in Vadodara, Rapidexa bridges the gap between massive national scale and precise regional flexibility. We empower manufacturers, traders, and fast-growing brands across Gujarat and Western India with a supply chain they can truly depend on.
+              </p>
+              <a href="about.html" class="btn btn-outline" style="padding: 1.2rem 2.5rem; border-radius: 100px;">
+                Learn More About Us <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+            <div class="showcaseImageContainer reveal-right">
+              <img src="./img/about_mission.png" alt="Rapidexa Operations" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 30px;" loading="lazy" />
+              <div class="showcaseFloatingBadge">
+                <div class="badgeIcon"><i data-lucide="shield-check"></i></div>
+                <div class="badgeText">
+                  <h4 style="font-size: 1.2rem;">Total Reliability</h4>
+                  <p style="font-size: 0.9rem;">Zero hidden fees.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ===== STATS SECTION ===== -->
       <section class="statsSection">
         <div class="container">
@@ -265,7 +294,9 @@
             <div class="reveal">
               <div class="serviceCard">
                 <div class="serviceImageWrapper">
-                  <img src="./img/service_express.png" alt="Regional Express" class="serviceImage" loading="lazy" />
+                  <div class="serviceImage" style="position: relative; background: url('./img/service_express_new.png') center/cover no-repeat;">
+                    <img src="./img/logo.svg" style="position: absolute; top: 55%; left: 65%; width: 35%; transform: translate(-50%, -50%) perspective(500px) rotateY(-15deg) rotateZ(3deg); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));" />
+                  </div>
                 </div>
                 <div class="serviceOverlay"></div>
                 <div class="serviceContent">
@@ -282,7 +313,9 @@
             <div class="reveal">
               <div class="serviceCard">
                 <div class="serviceImageWrapper">
-                  <img src="./img/service_ftl.png" alt="Full Truckload" class="serviceImage" loading="lazy" />
+                  <div class="serviceImage" style="position: relative; background: url('./img/service_ftl_new.png') center/cover no-repeat;">
+                    <img src="./img/logo.svg" style="position: absolute; top: 45%; left: 55%; width: 45%; transform: translate(-50%, -50%) perspective(800px) rotateY(15deg) rotateZ(-2deg); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));" />
+                  </div>
                 </div>
                 <div class="serviceOverlay"></div>
                 <div class="serviceContent">
@@ -467,7 +500,7 @@
       <!-- ===== CTA SECTION ===== -->
       <section class="ctaSection">
         <div class="ctaBg">
-          <img src="./img/about_hero.png" alt="" loading="lazy" style="opacity: 0.5;" />
+          <img src="./img/cta_bg_new.png" alt="" loading="lazy" style="opacity: 0.5; width: 100%; height: 100%; object-fit: cover;" />
         </div>
         <div class="ctaOverlay"></div>
         <div class="ctaContent reveal">
@@ -489,7 +522,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html" class="logo">Rapidexa<span style="color: var(--color-accent)">.</span></a>
+          <a href="index.html" class="logo"><img src="./img/logo.svg" alt="Rapidexa Logo" class="logo-img"></a>
           <p class="footer-desc">
             Next-generation B2B logistics powering businesses across Gujarat & Western India. Speed meets reliability.
           </p>

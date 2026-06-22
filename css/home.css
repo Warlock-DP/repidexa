@@ -736,7 +736,7 @@
 }
 
 .ctaTitle {
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2rem, 8vw, 5rem);
   font-weight: 900;
   color: white;
   margin-bottom: 2rem;
@@ -794,7 +794,7 @@
   .ctaSection { padding: 6rem 0; }
 
   .heroTitle {
-    font-size: 3rem;
+    font-size: clamp(2rem, 10vw, 3rem);
   }
   
   .heroActions {
@@ -847,7 +847,20 @@
     grid-template-columns: 1fr;
   }
   
+  .statCard {
+    padding: 2rem 1rem;
+  }
+  
   .serviceCard {
     aspect-ratio: 4/3;
+  }
+  
+  .showcaseFloatingBadge, .showcaseGrid.reverse .showcaseFloatingBadge {
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    bottom: -10%;
   }
 }

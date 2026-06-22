@@ -19,6 +19,7 @@
   font-size: clamp(2rem, 8vw, 4rem);
   background: linear-gradient(135deg, #ffffff, var(--color-accent));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .aboutHero p {

@@ -98,6 +98,13 @@
           @media (max-width: 480px) {
             .hero-glass-container {
               padding: 1.5rem 1rem !important;
+              width: calc(100% - 2rem) !important;
+              margin: 0 auto;
+            }
+            .hero {
+              height: auto !important;
+              padding-top: 120px !important;
+              padding-bottom: 60px !important;
             }
           }
         </style>
@@ -178,7 +185,7 @@
             
             <h1 class="heroTitle reveal" style="font-size: clamp(2.2rem, 10vw, 5.5rem); margin-bottom: 1.5rem; line-height: 1.1;">
               Move Faster.<br />
-              <span class="heroTitleAccent" style="background: linear-gradient(135deg, #ffffff 0%, var(--color-accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Scale Boundless.</span>
+              <span class="heroTitleAccent" style="background: linear-gradient(135deg, #ffffff 0%, var(--color-accent) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Scale Boundless.</span>
             </h1>
             
             <p class="heroSubtitle reveal" style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 3rem;">
@@ -186,10 +193,10 @@
             </p>
             
             <div class="heroActions reveal">
-              <a href="contact.html" class="btnSuper" style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">
+              <a href="contact.html" class="btnSuper">
                 Request Pickup <i data-lucide="arrow-right"></i>
               </a>
-              <a href="services.html" class="btnSuperOutline" style="font-size: 1.1rem; padding: 1.2rem 2.5rem; background: rgba(255,255,255,0.1);">
+              <a href="services.html" class="btnSuperOutline">
                 Explore Solutions
               </a>
             </div>
@@ -251,29 +258,25 @@
           <div class="statsGrid">
             <div class="statCard reveal">
               <div class="statNumber">
-                <span data-end="12">0</span>
-                <span style="color: var(--color-accent)">M+</span>
+                <span data-end="12">0</span><span style="color: var(--color-accent)">M+</span>
               </div>
               <div class="statLabel">Parcels Delivered</div>
             </div>
             <div class="statCard reveal" style="transition-delay: 0.1s">
               <div class="statNumber">
-                <span data-end="35">0</span>
-                <span style="color: var(--color-accent)">+</span>
+                <span data-end="35">0</span><span style="color: var(--color-accent)">+</span>
               </div>
               <div class="statLabel">Cities Connected</div>
             </div>
             <div class="statCard reveal" style="transition-delay: 0.2s">
               <div class="statNumber">
-                <span data-end="99">0</span>
-                <span style="color: var(--color-accent)">.8%</span>
+                <span data-end="99">0</span><span style="color: var(--color-accent)">.8%</span>
               </div>
               <div class="statLabel">On-Time Rate</div>
             </div>
             <div class="statCard reveal" style="transition-delay: 0.3s">
               <div class="statNumber">
-                <span data-end="24">0</span>
-                <span style="color: var(--color-accent)">/7</span>
+                <span data-end="24">0</span><span style="color: var(--color-accent)">/7</span>
               </div>
               <div class="statLabel">Live Support</div>
             </div>

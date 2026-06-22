@@ -132,6 +132,8 @@
 }
 
 @media (max-width: 600px) {
-  .footer { padding: 3rem 0 0 0; }
-  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  .footer { padding: 3rem 0 80px 0; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem 1rem; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-col:last-child { grid-column: 1 / -1; }
 }

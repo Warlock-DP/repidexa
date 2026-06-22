@@ -97,6 +97,7 @@
 .heroTitleAccent {
   background: linear-gradient(135deg, var(--color-accent) 0%, #ff9900 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   padding-right: 0.1em;
@@ -357,6 +358,7 @@
   font-weight: 900;
   background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.5) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
   line-height: 1;
@@ -407,7 +409,6 @@
   overflow: hidden;
   aspect-ratio: 16/9;
   cursor: pointer;
-  group: service;
 }
 
 .serviceImageWrapper {
@@ -843,12 +844,30 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 600px;
+    height: auto;
+  }
+  
+  .btnSuper, .btnSuperOutline {
+    padding: 1rem 1.5rem;
+    font-size: 1.05rem;
+  }
+
   .statsGrid {
     grid-template-columns: 1fr;
   }
   
   .statCard {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .statNumber {
+    font-size: 3rem;
+  }
+  
+  .statLabel {
+    font-size: 0.8rem;
   }
   
   .serviceCard {
@@ -861,6 +880,6 @@
     width: 90%;
     flex-direction: column;
     text-align: center;
-    bottom: -10%;
+    bottom: 5%;
   }
 }

@@ -72,7 +72,7 @@
               <span style="color: var(--color-accent); font-weight: 600; letter-spacing: 1px; font-size: 0.9rem;">OMNISCIENT VISIBILITY</span>
             </div>
             <h1 class="reveal" style="font-size: clamp(2.2rem, 8vw, 4.5rem); margin-bottom: 1.5rem; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Track Your Cargo.</h1>
-            <p class="reveal" style="transition-delay: 0.2s; font-size: 1.25rem; color: rgba(255,255,255,0.8); line-height: 1.6;">Enter your Waybill or Order Number to get second-by-second telemetry, live GPS routing, and instant ETA updates for your shipment.</p>
+            <p class="reveal" style="transition-delay: 0.2s; font-size: 1.25rem; color: rgba(255,255,255,0.8); line-height: 1.6;">Access our live tracking portal to get second-by-second telemetry, live GPS routing, and instant ETA updates for your shipment.</p>
           </div>
 
           <div class="reveal" style="transition-delay: 0.4s;">
@@ -80,11 +80,12 @@
               <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(255,204,0,0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem auto; border: 1px solid rgba(255,204,0,0.2);">
                 <i data-lucide="map" style="width: 40px; height: 40px; color: var(--color-accent);"></i>
               </div>
-              <h2 style="margin-bottom: 2rem; font-size: 1.8rem;">Enter Waybill Number</h2>
-              <form onsubmit="event.preventDefault(); alert('Tracking ID ' + document.getElementById('trackingId').value + ' not found in demo environment.');">
-                <input type="text" id="trackingId" placeholder="e.g. RPDX-123456789" required style="width: 100%; padding: 1.2rem 1.5rem; border-radius: 10px; border: 2px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.5); color: white; font-size: 1.1rem; margin-bottom: 1.5rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='var(--color-accent)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.2rem; padding: 1.2rem;">Track Shipment</button>
-              </form>
+              <h2 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Track Online</h2>
+              <p style="color: rgba(255,255,255,0.7); margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.6;">Click below to access our portal where you can enter your RF number, E-ware number, or Waybill ID.</p>
+              <a href="https://trk.ecount.in/lr/rlpl96" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.2rem; padding: 1.2rem; display: inline-flex; align-items: center; gap: 0.75rem;">
+                Track Your Shipment
+                <i data-lucide="external-link" style="width: 20px; height: 20px;"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -179,7 +180,7 @@
     <div class="footer-bottom">
       <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
         <p style="margin: 0;">&copy; 2026 Rapidexa Logistics. All rights reserved.</p>
-        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Developed by <a href="https://jarwix.com" target="_blank" style="color: var(--color-accent); text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--color-accent)'">jarwix.com</a></p>
+        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Imagined, designed, and brought to life by <a href="https://jarwix.com" target="_blank" style="color: var(--color-accent); text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--color-accent)'">Jarwix</a></p>
       </div>
     </div>
   </footer>

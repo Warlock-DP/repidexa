@@ -136,4 +136,10 @@
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem 1rem; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-col:last-child { grid-column: 1 / -1; }
+  .footer-bottom .container {
+    justify-content: center !important;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.6rem !important;
+  }
 }

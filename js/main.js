@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 7. WhatsApp Floating Widget
   const waWidget = document.createElement('a');
+  waWidget.id = "waWidget";
   waWidget.href = "https://wa.me/919714255995?text=Hello%20Rapidexa,%20I%20would%20like%20to%20know%20more.";
   waWidget.target = "_blank";
   waWidget.innerHTML = `<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 35px; height: 35px;" />`;

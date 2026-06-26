@@ -206,20 +206,15 @@
 
       <!-- ===== TRACKING WIDGET ===== -->
       <div class="trackingWrapper reveal">
-        <form class="trackingInner" onsubmit="event.preventDefault(); window.location.href='tracking.html';">
-          <div class="trackingInputWrapper">
-            <i data-lucide="search" class="trackingIcon"></i>
-            <input 
-              type="text" 
-              class="trackingInput" 
-              placeholder="Enter Waybill, Order, or Consignment Number..." 
-              required
-            />
+        <div class="trackingInner" style="justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 1rem; text-align: left;">
+            <i data-lucide="map-pin" class="trackingIcon" style="margin: 0; width: 24px; height: 24px; flex-shrink: 0;"></i>
+            <span style="color: white; font-size: 1.15rem; font-weight: 600;">Track your cargo live on our external tracking portal</span>
           </div>
-          <button type="submit" class="trackingBtn">
-            Track Shipment
-          </button>
-        </form>
+          <a href="https://trk.ecount.in/lr/rlpl96" target="_blank" class="trackingBtn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center; flex-shrink: 0;">
+            Track Shipment <i data-lucide="external-link" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
       </div>
 
       <!-- ===== ABOUT SECTION ===== -->
@@ -574,7 +569,7 @@
     <div class="footer-bottom">
       <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
         <p style="margin: 0;">&copy; 2026 Rapidexa Logistics. All rights reserved.</p>
-        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Developed by <a href="https://jarwix.com" target="_blank" style="color: var(--color-accent); text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--color-accent)'">jarwix.com</a></p>
+        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Imagined, designed, and brought to life by <a href="https://jarwix.com" target="_blank" style="color: var(--color-accent); text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--color-accent)'">Jarwix</a></p>
       </div>
     </div>
   </footer>

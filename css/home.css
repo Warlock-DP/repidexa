@@ -812,10 +812,18 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
   }
   
-  .trackingInputWrapper {
-    width: 100%;
+  .trackingInner > div {
+    flex-direction: column;
+    text-align: center !important;
+    gap: 0.5rem !important;
+  }
+
+  .trackingIcon {
+    margin: 0 0 0.5rem 0 !important;
   }
   
   .trackingBtn {
@@ -881,5 +889,14 @@
     flex-direction: column;
     text-align: center;
     bottom: 5%;
+  }
+
+  .marqueeText {
+    font-size: 1.4rem;
+  }
+  
+  .marqueeItem {
+    gap: 1.2rem;
+    padding: 0 1.2rem;
   }
 }
